@@ -1,0 +1,1660 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- <div>
+            <h3 class="text-center">SOMERSET COUNTY PLANNING BOARD</h3>
+            <h2 class="text-center">Telephone (908) 231-7021; Fax (908) 707-1749; TDD (908) 231-7168</h2>
+            <h2 class="text-center"> P.O. Box 3000, Somerville, N.J. 08876-1262</h2>
+        </div> -->
+        <!-- <div>
+            <p>
+                The Somerset County Land Development Review Resolution requires
+                that certain proposed land development proposals be submitted to the
+                Somerset County Planning Board for review and, where required,
+                approval. Land development activities subject to County Planning
+                Board approval include:
+            </p>
+            <ul>
+                <li>
+                    All subdivisions and resubdivisions of land within Somerset County.
+                </li>
+                <li>
+                    All site plans for land development
+                </li>
+                <li>
+                    Change of Use applications
+                </li>
+            </ul>
+            <p>
+                This application form shall be completed by the applicant, or the
+                applicant’s designated agent and submitted with all required
+                documents to the Somerset County Planning Board. This application
+                consists of three (3) parts, each of which shall be completed as
+                indicated.
+            </p>
+
+        </div> -->
+        
+        <h5 class="container-fluid">One set of plans and supporting documents shall be submitted.</h5>
+        <mat-stepper [orientation]="(stepperOrientation | async)!" #stepper>
+            <mat-step>
+                <form>
+                    <ng-template matStepLabel>Project Information</ng-template>
+                    <p style="text-align: justify;">For new land development applications, complete Sections A-E and sign the application in Section
+                        F .
+                        For resubmissions and revisions, fill out Section A, update Sections B-E for any change in
+                        information,
+                        and sign the application in Section F</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header head">
+                                            <h5>SECTION A – PROJECT IDENTIFICATION</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>PROJECT NAME </mat-label>
+                                                        <input type="text" matInput placeholder="Enter PROJECT NAME">
+
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>MUNICIPALITY </mat-label>
+                                                        <input type="text" matInput placeholder="Enter MUNICIPALITY">
+
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>BLOCK(S)</mat-label>
+                                                        <input type="text" matInput placeholder="Enter BLOCK(S)">
+
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>LOT(S) </mat-label>
+                                                        <input type="text" matInput placeholder="Enter LOT(S)">
+
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>STREET ADDRESS</mat-label>
+                                                        <textarea matInput placeholder="Enter STREET ADDRESS"
+                                                            rows="3"></textarea>
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>TAX MAP PAGE</mat-label>
+                                                        <input type="text" matInput placeholder="Enter TAX MAP PAGE">
+
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>DATE OF PLANS BEING SUBMITTED </mat-label>
+                                                        <input matInput [matDatepicker]="pickerfrom" [min]="minDate"
+                                                            class="custom-width" />
+                                                        <mat-datepicker #pickerfrom>
+                                                        </mat-datepicker>
+                                                        <mat-datepicker-toggle matSuffix
+                                                            [for]="pickerfrom"></mat-datepicker-toggle>
+
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label id="example-radio-group-label">LOCAL BOARD REVIEWING
+                                                        APPLICATION:</label>
+                                                    <mat-radio-group aria-labelledby="example-radio-group-label"
+                                                        class="example-radio-group">
+                                                        <mat-radio-button value="1">PLANNING BOARD</mat-radio-button>
+                                                        <mat-radio-button value="1">BOARD OF
+                                                            ADJUSTMENT</mat-radio-button>
+                                                    </mat-radio-group>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>COUNTY PLANNING BOARD FILE (for
+                                                            resubmissions/revisions)</mat-label>
+                                                        <input type="text" matInput
+                                                            placeholder="Enter COUNTY PLANNING BOARD FILE">
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mt-2">
+                                        <div class="card-header head">
+                                            <h5>SECTION C – SITE DATA</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>AREA OF TRACT acres</mat-label>
+                                                        <input type="text" matInput placeholder="Enter AREA OF TRACT in acres">
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col">
+                                                    <mat-form-field class="example-full-width">
+                                                        <mat-label>DEDICATED OPEN SPACE acres</mat-label>
+                                                        <input type="text" matInput placeholder="Enter DEDICATED OPEN SPACE in acres">
+
+                                                    </mat-form-field>
+                                                </div>
+                                            </div>                                         
+                                            <div class="row">
+                                                <div class="col">
+                                                     <label>PUBLIC SEWER</label>
+                                                    <div style="float: right;">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="YES">YES</mat-radio-button>
+                                                            <mat-radio-button class="p-2" value="NO">NO</mat-radio-button>
+                                                        </mat-radio-group>
+                                                </div>
+                                            
+                                                </div>                                                
+                                            </div> 
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label >PUBLIC WATER </label>
+                                                    <div style="float: right;"><mat-radio-group >
+                                                        <mat-radio-button value="YES">YES</mat-radio-button>
+                                                        <mat-radio-button  class="p-2" value="NO">NO</mat-radio-button>
+                                                    </mat-radio-group></div>
+                                                </div>
+                                            </div> 
+                                            <div class="row">
+                                                <div class="col">
+                                                    <label>REDEVELOPMENT</label>
+                                                    <div style="float: right;"><mat-radio-group >
+                                                        <mat-radio-button value="YES">YES</mat-radio-button>
+                                                        <mat-radio-button class="p-2" value="NO">NO</mat-radio-button>
+                                                    </mat-radio-group></div>
+                                                   
+                                                </div>                                               
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card mt-2">
+                                        <div class="card-header head">
+                                            <h5>SECTION E – SITE PLAN INFORMATION</h5>
+                                        </div>
+                                        <div class="card-body" style="overflow-x: auto;">
+                                            <table style="width:100%;" >
+                                                <tr>
+                                                    <th class="px-1 fonts">
+                                                        TYPE
+                                                    </th>
+                                                    <th class="px-1 text-center fonts">
+                                                        NUMBER OF UNITS
+                                                    </th >
+                                                    <th class="px-1 text-center fonts">  
+                                                        MOUNT OF NEW SQ. FOOTAGE
+                                                    </th>
+                                                    <th class="px-1 text-center fonts">
+                                                        NUMBER OF NEW PARKING SPACES
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">RESIDENTIAL</span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                        <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="12345">
+                                                        </mat-form-field>
+                                                    </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">Living Units</span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                        <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="12345">
+                                                        </mat-form-field>
+                                                    </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <!-- <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">Attached Units</span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                        <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="12345">
+                                                        </mat-form-field>
+                                                    </td>
+                                                    <!-- <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">Fair Housing Act Units</span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                        <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="12345">
+                                                        </mat-form-field>
+                                                    </td>
+                                                    <!-- <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">COMMERCIAL/RETAIL </span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                       
+                                                    </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">OFFICE</span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">INDUSTRIAL/WAREHOUSE</span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">PUBLIC/INSTITUTIONAL</span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>                                                        
+                                                    <mat-checkbox class="example-margin"><span class="small-text">OTHER</span></mat-checkbox>                                                        
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field> </td>
+                                                    <td> <mat-form-field class="example-full-width">
+                                                            <input type="text" matInput placeholder="1234">
+                                                        </mat-form-field>
+                                                     </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header head">
+                                                <h5>SECTION B – APPLICANT AND CONTACT INFORMATION </h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>APPLICANT’S NAME</mat-label>
+                                                            <input type="text" matInput
+                                                                placeholder="Enter APPLICANT’S NAME">
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>ADDRESS</mat-label>
+                                                            <textarea matInput placeholder="Enter ADDRESS"
+                                                                rows="3"></textarea>
+                                                        </mat-form-field>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>TELEPHONE</mat-label>
+                                                            <input type="text" matInput placeholder="Enter TELEPHONE">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>FAX</mat-label>
+                                                            <input type="text" matInput placeholder="Enter FAX">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>E-MAIL</mat-label>
+                                                            <input type="email" matInput placeholder="Enter Email">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <mat-divider></mat-divider>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>PLAN PREPARER’S NAME</mat-label>
+                                                            <input type="text" matInput
+                                                                placeholder="Enter PLAN PREPARER’S NAME">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>PLAN PREPARER’S ADDRESS</mat-label>
+                                                            <textarea matInput
+                                                                placeholder="Enter PLAN PREPARER’S ADDRESS"
+                                                                rows="3"></textarea>
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>TELEPHONE</mat-label>
+                                                            <input type="text" matInput placeholder="Enter TELEPHONE">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>FAX</mat-label>
+                                                            <input type="text" matInput placeholder="Enter FAX">
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>E-MAIL</mat-label>
+                                                            <input type="email" matInput placeholder="Enter E-MAIL">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <mat-divider></mat-divider>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>ATTORNEY’S NAME</mat-label>
+                                                            <input type="text" matInput placeholder="ATTORNEY’S NAME">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>ATTORNEY’S ADDRESS</mat-label>
+                                                            <textarea matInput placeholder="Enter ATTORNEY’S ADDRESS"
+                                                                rows="3"></textarea>
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>TELEPHONE</mat-label>
+                                                            <input type="text" matInput placeholder="Enter TELEPHONE">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>FAX</mat-label>
+                                                            <input type="text" matInput placeholder="Enter FAX">
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>E-MAIL</mat-label>
+                                                            <input type="email" matInput placeholder="Enter E-MAIL">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card mt-2">
+                                            <div class="card-header head">
+                                                <h5>SECTION D – SUBDIVISION INFORMATION</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label >SUBDIVISION TYPE  </label>
+                                                        <div style="float: right;"><mat-radio-group >
+                                                            <mat-radio-button value="RESIDENTIAL">RESIDENTIAL</mat-radio-button>
+                                                            <mat-radio-button  class="p-2" value="NONRESIDENTIAL">NONRESIDENTIAL</mat-radio-button>
+                                                        </mat-radio-group></div>
+                                                    </div>
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>NUMBER OF NEW BUILDING LOTS </mat-label>
+                                                            <input type="text" matInput placeholder="Enter NUMBER OF NEW BUILDING LOTS ">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>TOTAL AREA OF NEW BUILDING LOTS acres</mat-label>
+                                                            <input type="text" matInput placeholder="Enter TOTAL AREA OF NEW BUILDING LOTS ">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>NEW BUILDING LOTS PROPOSED UNDER FAIR HOUSING ACT</mat-label>
+                                                            <input type="text" matInput placeholder="Enter NEW BUILDING LOTS PROPOSED UNDER FAIR HOUSING ACT">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>AVERAGE AREA OF NEW BUILDING LOTS acres</mat-label>
+                                                            <input type="text" matInput placeholder="Enter AVERAGE AREA OF NEW BUILDING LOTS ">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>  
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>NUMBER OF MULI-FAMILY LOTS </mat-label>
+                                                            <input type="text" matInput placeholder="Enter NUMBER OF MULI-FAMILY LOTS">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>LENGTH OF NEW STREET linear feet </mat-label>
+                                                            <input type="text" matInput placeholder="Enter LENGTH OF NEW STREET inlinear feet">
+
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>                                                
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card mt-2">
+                                            <div class="card-header head">
+                                                <h5>SECTION F - SIGNATURE</h5>
+                                            </div>
+                                            <div class="card-body">                                               
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>SIGNATURE OF APPLICANT OR AGENT</mat-label>
+                                                            <input type="text" matInput placeholder="Enter SIGNATURE OF APPLICANT OR AGENT">
+                                                        </mat-form-field>
+                                                    </div>  
+                                                    <div class="col">
+                                                        <mat-form-field class="example-full-width">
+                                                            <mat-label>DATE</mat-label>
+                                                            <input matInput [matDatepicker]="pickerfromDate" [min]="minDate" class="custom-width" />
+                                                            <mat-datepicker #pickerfromDate>
+                                                            </mat-datepicker>
+                                                            <mat-datepicker-toggle matSuffix [for]="pickerfromDate"></mat-datepicker-toggle>
+                                                
+                                                        </mat-form-field>
+                                                    </div>                                              
+                                                    
+                                                </div>
+                                          
+                                               
+                                                
+                                                                                         
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div>
+                        <button mat-button matStepperNext>Next</button>
+                    </div> -->
+                </form>
+            </mat-step>
+                <mat-step>
+                    <form>
+                        <ng-template matStepLabel>Review Fee Schedule</ng-template>
+                        <p style="text-align: justify;">A review fee shall apply to each subdivision and land development submitted to the Somerset County
+                            Planning Board for review in accordance with the New Jersey County Enabling Act, Section 40 27-6.2
+                            and 40 27-6.6. Fees shall be submitted with the submission package to the County Planning Board
+                            located in the County Administration Building, 20 Grove Street, Somerville, New Jersey. Only certified
+                            checks or money orders, payable to Treasurer, County of Somerset, will be accepted. Review will not
+                            commence until the proper fees and accompanying plans and supporting documents are received by the
+                            County Planning Board. The review fee is non-refundable.
+                            One pre-application meeting and/or submission of a concept plan will be considered by the Planning
+                            Board when requested by the applicant. Subsequent meetings and reviews of documents will only be
+                            considered upon receipt of a completed Somerset County Land Development Application Form and
+                            Checklist with the appropriate fee.
+                            Complete all sections of the fee schedule below that apply. </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header head">
+                                                <h5>SECTION A–REVIEW FEE EXEMPTION (Check reason for exemption)</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <mat-checkbox class="example-margin"><span>Lot line adjustments where no building lots are being created.</span></mat-checkbox>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <mat-checkbox class="example-margin"><p class="mt-1">Minor building additions not on a county road  involving less than 1,000 sq.<br/> ft. and no 
+                                                            additional parking.</p></mat-checkbox>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <mat-checkbox class="example-margin"><span>Plans submitted by a duly recognized nonprofit institution or municipality.</span></mat-checkbox>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <mat-checkbox class="example-margin"><span>Housing units proposed as per the Fair Housing Act. s</span></mat-checkbox>                                                        
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card mt-2">
+                                            <div class="card-header head">
+                                                <h5>SECTION C – SITE PLAN REVIEW FEE (Check appropriate category)</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="text-align: justify;">If uncertain whether the proposed development impacts a County facility, the applicant should submit 
+                                                    the lesser fee. If the County determines that the project impacts a County facility, the County will notify 
+                                                    the applicant upon issuance of the first County Planning Board report. </p>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-7 col-md-7 col-sm-11 col-xs-11">
+                                                                    <span>A site plan which does not impact a County road or drainage facility as determined by the 
+                                                                        County.</span>
+                                                                     
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$150.00 flat fee">                
+                                                                    </mat-form-field>
+                                                                </div>
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-7 col-md-7 col-sm-11 col-xs-11">
+                                                                    <span>A site plan which impacts a County road or drainage facility as determined by the County.</span>
+                                                                     
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$400.00 flat fee plus">                
+                                                                    </mat-form-field>
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$10.00 per parking stall">                
+                                                                    </mat-form-field>
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$2.00 per 100 sq. ft.">                
+                                                                    </mat-form-field>
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$20.00 per dwelling unit">                
+                                                                    </mat-form-field>
+                                                                </div>
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                <p style="text-align: justify;">
+                                                    For projects requiring a more detailed engineering/planning review, an escrow account may be required
+                                                    to cover the actual cost of completing the review of the project. The County Planning Board will advise
+                                                    the applicant of this amount when applicable
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card mt-2">
+                                            <div class="card-header head">
+                                                <h5>SECTION E – REVISION FEE (Check appropriate category)</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="text-align: justify;">A revision fee must be submitted for revised plans, stormwater management reports, traffic reports and 
+                                                    other supporting documentation.</p>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                                                                    <span>1st revision - no revision fee</span>                                                                     
+                                                                </div>                                                              
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                                                                    <span>2nd and each subsequent revision 
+                                                                    </span>                                                                     
+                                                                </div>                                                              
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <div class="col-12">
+                                                            <diV class="row">                                                                
+                                                                <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                    <span>$150.00 Minor Subdivision (2 or fewer new lots) 
+                                                                    </span>                                                                     
+                                                                </div>  
+                                                                <div class="col-lg-3 col-md-9 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$150.00">                
+                                                                    </mat-form-field>                                                                   
+                                                                </div>                                                              
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">                                                                
+                                                                <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                    <span>$300.00 Major Subdivision (3 or more new lots)  
+                                                                    </span>                                                                     
+                                                                </div>  
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$300.00">                
+                                                                    </mat-form-field>                                                                   
+                                                                </div>                                                              
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">                                                                
+                                                                <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                    <span>$300.00 All Site Plans  
+                                                                    </span>                                                                     
+                                                                </div>  
+                                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$300.00">                
+                                                                    </mat-form-field>                                                                   
+                                                                </div>                                                              
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header head">
+                                                <h5>SECTION B – SUBDIVISION REVIEW FEE (Check appropriate category)</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="text-align: justify;">If uncertain whether the proposed development impacts a County facility, the applicant should submit 
+                                                    the lesser fee. If the County determines that the project impacts a County facility, the County will notify 
+                                                    the applicant as to the correct fee in the first County Planning Board report.</p>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                    <span>A minor subdivision which contains two (2) or fewer new lots, which does not impact a 
+                                                                        County road or drainage facility as determined by the County.</span>
+                                                                     
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="Enter $150.00 flat fee">                
+                                                                    </mat-form-field>
+                                                                </div>
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                    <span>A minor subdivision which contains two (2) or fewer new lots, which impacts a County 
+                                                                        road or drainage facility as determined by the County. </span>
+                                                                     
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$200.00 flat fee">                
+                                                                    </mat-form-field>
+                                                                </div>
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                    <span>A major subdivision which contains three (3) or more new lots, which does not impact a 
+                                                                        County road or drainage facility as determined by the County. </span>
+                                                                     
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$300.00 flat fee">                
+                                                                    </mat-form-field>
+                                                                </div>
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                    <span>A major subdivision which contains three (3) or more new lots, which impacts a County 
+                                                                        road or drainage facility as determined by the County. </span>
+                                                                     
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-9 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$400.00 flat fee plus ">                
+                                                                    </mat-form-field>
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$20.00 per new lot">                
+                                                                    </mat-form-field>
+                                                                </div>
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <diV class="row">
+                                                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                                                    <mat-checkbox class="example-margin"></mat-checkbox>   
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                    <span> A Final Plat</span>
+                                                                     
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                                                    <mat-form-field class="example-full-width">                                                                           
+                                                                        <input type="text" matInput placeholder="$300.00 flat fee ">                
+                                                                    </mat-form-field>
+                                                                </div>
+
+                                                            </diV>
+                                                                                                                
+                                                        </div>
+                                                    </div>
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card mt-2">
+                                            <div class="card-header head">
+                                                <h5>SECTION D – TOTAL APPLICATION FEE</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <mat-label>TOTAL APPLICATION FEE $</mat-label>
+                                                        <mat-form-field class="example-full-width">                                                                           
+                                                            <input type="text" matInput placeholder="$ TOTAL APPLICATION FEE">                
+                                                        </mat-form-field>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card mt-2">
+                                            <div class="card-header head">
+                                                <h5>SECTION F – GEOGRAPHIC INFORMATION SYSTEM FEE (Check appropriate category)</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p style="text-align: justify;">A separate check shall be submitted for the Geographic Information System fee as listed below.</p>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <diV class="row">                                                                
+                                                            <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                <span>$25.00 per plat plus  
+                                                                </span>                                                                     
+                                                            </div>  
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                <mat-form-field class="example-full-width">                                                                           
+                                                                    <input type="text" matInput placeholder="$25.00 per plat plus">                
+                                                                </mat-form-field>                                                                   
+                                                            </div>                                                              
+
+                                                        </diV>
+                                                                                                            
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <diV class="row">                                                                
+                                                            <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                <span>$10.00 per new lot  
+                                                                </span>                                                                     
+                                                            </div>  
+                                                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                                <mat-form-field class="example-full-width">                                                                           
+                                                                    <input type="text" matInput placeholder="$10.00 per new lot">                
+                                                                </mat-form-field>                                                                   
+                                                            </div>                                                              
+
+                                                        </diV>
+                                                                                                            
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <diV class="row">                                                                
+                                                            <div class="col-lg-9 col-md-9 col-sm-11 col-xs-11">
+                                                                <span>$25.00 per site plan if proposed structure is greater the 400 sq. ft. </span>                                                                     
+                                                            </div>  
+                                                            <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12">
+                                                                <mat-form-field class="example-full-width">                                                                           
+                                                                    <input type="text" matInput placeholder="$25.00 per site plan">                
+                                                                </mat-form-field>                                                                   
+                                                            </div>                                                              
+
+                                                        </diV>
+                                                                                                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                </mat-step>
+
+            <mat-step>
+                <form>
+                    <ng-template matStepLabel>Submission Contents Checklist</ng-template>
+                    <h4 class="text-center">SOMERSET COUNTY </h4>  
+                    <h4 class="text-center">LAND DEVELOPMENT </h4>  
+                    <h4 class="text-center">COMPLETENESS CHECKLIST</h4>  
+                    <p style="text-align: justify;">The Somerset County Land Development Application Completeness 
+                        Checklist is part of the adopted Somerset County Land Development 
+                        Review Resolution. For further clarification concerning items on the 
+                        checklist refer to the Land Development Review Resolution. The 
+                        Land Development Review Resolution may be viewed on the 
+                        Somerset County website at (www.co.somerset.nj.us/planweb/index. 
+                        htm; select Planning Division, then Land Development Review). 
+                        Somerset County Planning and Engineering staffs are authorized to 
+                        make all determinations on completeness. Please refer to the Land 
+                        Development Review Resolution for appropriate thresholds for traffic 
+                        and stormwater management reports. 
+                        Any applicant seeking a waiver from any item on this completeness 
+                        checklist shall provide a detailed written explanation for each waiver 
+                        request being sought. If deemed necessary, this written request and 
+                        accompanying explanation will be brought before the Somerset 
+                        County Land Development Committee for review and consideration. 
+                        The applicant will be advised in writing of the Land Development 
+                        Committee’s decision concerning the waiver request(s). 
+                        </p>   
+                        <div class="card">
+                            <div class="header head"> <h4>Somerset County Land Development Completeness Checklis</h4></div>
+                            <div class="card-body">
+                                <p style="text-align: justify;">
+                                    The following checklist is to be completed and included with the standard application form:
+                                </p>                               
+                                <h5 class="text-center" style="font-weight:bold;"> I= Incomplete NA=Not Applicable C=Complete</h5>
+                            </div>
+                        </div>  
+                        <div class="row mt-2">
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header head"> <h5>General Requirements</h5></div>
+                                            <div class="mt-2">
+                                                <span class="p-2" style="font-weight:bold">I</span>
+                                                <span class="p-4" style="font-weight:bold">NA</span>
+                                                <span class="p-4" style="font-weight:bold">C</span>
+                                            </div>
+                                            
+                                            <div class="card-body">                                                
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p>Completed current County Land Development Application form with all required attachments. 
+                                                            <a href=" http://www.co.somerset.nj.us/planweb/pdf/appformlist.pdf">http://www.co.somerset.nj.us/planweb/pdf/appformlist.pdf</a>
+                                                           </p>
+                                                            <button class="head" type="button" mat-raised-button (click)="fileInput.click()">Upload File</button>
+                                                            <input hidden (change)="onFileSelected()" #fileInput type="file" id="file">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12  gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p>Review or revision fees paid in full by certified check.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Written description of application. Description must include existing and proposed use. Any items 
+                                                            marked not applicable on this checklist must be fully explained within the written description.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p> Copy of complete application as submitted to municipality.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Copy of all applications to other review agency (NJDEP, Soil Conservation, Canal Commission, 
+                                                            etc.).</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;"> Historical Impact Statement (if required by Chapter 8 of Resolution). If not applicable, state 
+                                                            reason in written description of project.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p>Agricultural Impact Statement (if required by Chapter 8 of Resolution). If not applicable, state 
+                                                            reason in written description of project.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;"> Recycling Plan Element (if required by Chapter 8 of Resolution). If not applicable, state reason in 
+                                                            written description of project.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Copy of Highlands Preservation Area Approval (if applicable). Please refer to 
+                                                            http://www.highlands.state.nj.us/njhighlands/ for more information on 
+                                                            requirements. If not applicable, state reason in written description of project.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Number of COAH units must be listed in the written description of application and shown on plan.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card mt-2">
+                                            <div class="card-header head">Stormwater Management Requirements</div>
+                                            <div class="mt-2">
+                                                <span class="p-2" style="font-weight:bold">I</span>
+                                                <span class="p-4" style="font-weight:bold">NA</span>
+                                                <span class="p-4" style="font-weight:bold">C</span>
+                                            </div>
+                                            
+                                            <div class="card-body">                                                
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Stormwater management report prepared in accordance with County standards, signed and sealed 
+                                                            by a professional engineer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Full-scale drainage area maps for existing and proposed conditions showing correct delineation of 
+                                                            sub-areas, times of concentration with flow paths and slopes, soil and cover types and downstream 
+                                                            point of analysis.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Proposed treatment consistent with County standards for intercepting, detaining and treating all 
+                                                            stormwater runoff directed to County facilities.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Adequate drainage improvements to ensure proper drainage at access point(s) and along the 
+                                                            County road.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Drainage calculations showing proposed drainage facilities in accordance with the appropriate 
+                                                            requirements.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Contours and spot elevations to determine existing and proposed drainage patterns.</p>
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card mt-2">
+                                            <div class="card-header head">Traffic Requirements</div>
+                                            <div class="mt-2">
+                                                <span class="p-2" style="font-weight:bold">I</span>
+                                                <span class="p-4" style="font-weight:bold">NA</span>
+                                                <span class="p-4" style="font-weight:bold">C</span>
+                                            </div>
+                                            
+                                            <div class="card-body">                                                
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Traffic Impact Study including: Existing, No Build, and Build Traffic Volumes, New Trip 
+                                                            Distribution Figures, Pass-by Trip Distribution Figures, Site Generated New Trip Figures, Site 
+                                                            Generated Pass-by Trip Figures, Site Generated Total Trip Figures, Existing, No Build, Build, and 
+                                                            Build with Mitigation Levels of Service Figures, Proposed Mitigation Measures, Sketch of 
+                                                            Proposed Mitigation Measures and Cost Estimate for Proposed Mitigation Measures.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Traffic Impact Study Technical Appendix, including: Traffic Count Data (Manual Count Sheets / 
+                                                            ATR's), Trip Generation Calculations, including pass-by calculations, Gravity Model (if 
+                                                            applicable) and Capacity Analysis Worksheets.</p>
+                                                    </div>
+                                                </div>                                                                                  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header head">Plan Requirements 
+                                            </div>
+                                            <div class="mt-2">
+                                                <span class="p-2" style="font-weight:bold">I</span>
+                                                <span class="p-4" style="font-weight:bold">NA</span>
+                                                <span class="p-4" style="font-weight:bold">C</span>
+                                            </div>
+                                            
+                                            <div class="card-body">                                                
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Title page with a legible key map, containing a north arrow, at a scale suitable to easily find the 
+                                                            site for a field inspection. The title page must also include the project name and the 3”x 4”County 
+                                                            acceptance stamp block.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Title page with a legible key map, containing a north arrow, at a scale suitable to easily find the 
+                                                            site for a field inspection. The title page must also include the project name and the 3”x 4”County 
+                                                            acceptance stamp block.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">County construction details, drawn to scale, and applicable specifications.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;"> Title block (Per N.J.S.A.13:40-1.3) containing type/name of application, plan preparer, existing 
+                                                            block and lot numbers, and date of plan with revision dates. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">County facilities and surrounding topography and features must be shown for a minimum distance 
+                                                            of 200' beyond the tract boundaries. For projects affecting County facilities this includes 
+                                                            pavement, curb, drainage systems, utilities, vegetation, striping, signage (sign type and 
+                                                            description), signals and similar features.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Zone district of site and adjoining areas, name of applicant, owner and applicant’s attorney.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Existing and proposed square footage (per floor) and use of building(s) listed. Number and type of 
+                                                            new units is to be specified.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Current signed and sealed Plan of Survey of the property in question prepared in accordance with 
+                                                            N.J.S.A.13:40-5.1.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Names of all property owners within 200' with lot and block numbers shown and adjacent lot 
+                                                            numbers shown on all sheets.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Right-of-way dedication(s) to the County consistent with County standards and the County 
+                                                            Master Plan shown on the plan with signed and sealed metes and bounds descriptions by a 
+                                                            professional land surveyor.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p>Proposed access location and configuration in accordance with Chapter 4 of the Land 
+                                                            Development Review Resolution and applicable County standards.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">For improvements within the County right-of-way, the centerline of the County road is to be 
+                                                            defined with bearings, distances and curve data with stationing every 50 feet increasing to the 
+                                                            north or east.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Lines of sight per County standards shown in plan and profile views with proposed treatment to 
+                                                            provide clear lines of sight. Sight easements are to be shown per County standards.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Intersection Grading Plan drawn at 1”=20’ showing pavement and curb elevations as needed to 
+                                                            ensure proper construction and positive drainage control. Superfluous information is to be omitted 
+                                                            from the Intersection Grading Plan.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p>Cross sections of the County road drawn per County standards at 1”=5’ (horizontal and vertical) 
+                                                            with existing and proposed elevations.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Typical roadway section(s) of the County road in accordance with County standards.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Proposed utility connections within the County right-of-way (sanitary, water, gas, electric, etc.) 
+                                                            with pavement restoration details and specifications per County standards.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Profile of driveway or sidestreet intersecting the County road showing smooth profile with grades 
+                                                            matching cross sections and intersection-grading plan.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Provisions for the collection of recyclables in multi-family residential and commercial 
+                                                            developments.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p>Signage and striping plan per County standards.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-sm-12 col-xs-12 gx-0">
+                                                        <mat-radio-group>
+                                                            <mat-radio-button value="1"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="2"></mat-radio-button>
+                                                            <mat-radio-button class="p-3" value="3"></mat-radio-button>
+                                                        </mat-radio-group>
+                                                    </div>
+                                                    <div class="col-9 mt-3">
+                                                        <p style="text-align: justify;">Traffic control plan for construction of improvements to County facilities.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>            
+                </form>
+            </mat-step>
+        </mat-stepper>
+
+    </div>
+
+</div>

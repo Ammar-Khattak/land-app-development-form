@@ -1,0 +1,36 @@
+.example-full-width {
+    width: 100%;
+  }
+  .custom-width {
+    width: 250px !important;
+  }
+  .example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }
+  .fonts{
+    font-size: 13px;
+    font-weight: bold;
+  }
+  /* .example-margin {
+    margin: 0 5px;
+  } */
+  .small-text{
+    font-size: 9px;
+  }
+  .head{
+    background-color: #80c342;
+    color: white;
+  }
+  ::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: #80c342; 
+ }
+::ng-deep .mat-step-header .mat-step-icon-state-edit{
+    background-color: #80c342; 
+}
